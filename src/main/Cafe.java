@@ -1,3 +1,5 @@
+package main;
+
 /**
  * Created by bearg on 5/12/2016.
  */
@@ -13,11 +15,11 @@ public final class Cafe {
 
     /**
      *
-     * @param coffeeType one of the coffee types defined in enum CoffeeType.
+     * @param coffeeType one of the coffee types defined in enum main.CoffeeType.
      *                   determines the number of beans and milks to use.
      * @param quantity the number of coffees to brew
      * @return a coffee instance with the specified type and in the specified qty.
-     * One Coffee instance represents quantity number of coffees.
+     * One main.Coffee instance represents quantity number of coffees.
      */
     public Coffee brew(CoffeeType coffeeType, int quantity) {
 

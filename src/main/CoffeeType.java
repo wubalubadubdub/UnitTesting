@@ -1,3 +1,5 @@
+package main;
+
 /**
  * Created by bearg on 5/12/2016.
  * Describes type of coffee we're going to serve.

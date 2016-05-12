@@ -1,3 +1,5 @@
+package main;
+
 /**
  * Created by bearg on 5/12/2016.
  */
@@ -10,7 +12,7 @@ public final class Coffee {
     public Coffee(CoffeeType type, int beans, int milk) {
 
         /**
-         * Our CoffeeType will be immutable, with final fields.
+         * Our main.CoffeeType will be immutable, with final fields.
          * No need for defensive copying
          */
         this.type = type;
@@ -33,7 +35,7 @@ public final class Coffee {
     @Override
     public String toString() {
 
-        return "Coffee{" +
+        return "main.Coffee{" +
                 "Type:" + type +
                 " Beans:" + beans +
                 " Milk:" + milk +
