@@ -3,11 +3,12 @@ package test;
 import main.Cafe;
 import main.Coffee;
 import main.CoffeeType;
+import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static main.CoffeeType.Espresso;
+import static main.CoffeeType.*;
 import static org.junit.Assert.*;
 
 /**
@@ -41,10 +42,12 @@ public class CafeTest {
         Coffee coffee = cafe.brew(Espresso);
 
         // then -- check the outcome
-        // check that coffee is of correct type
+        // composition of matchers to assert that coffee has a property beans
+        // that is equal to the number of beans required for espresso
+        assertBeansEqual(coffee, Espresso);
+        assertMilkEqual(coffee, Espresso);
+
         assertEquals("Wrong coffee type", Espresso, coffee.getType());
-        assertEquals("Wrong amount of milk", NO_MILK, coffee.getMilk());
-        assertEquals("Wrong number of beans",  ESPRESSO_BEANS, coffee.getBeans());
 
         // bad! if bean restocking code breaks, you don't want test relating
         // to brewing espresso fail. wouldn't know whether test failed because
@@ -52,7 +55,6 @@ public class CafeTest {
         // Assert.assertEquals(0, cafe.getBeansInStock());
 
     }
-
 
 
     @Test
@@ -63,12 +65,13 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
-        Coffee coffee = cafe.brew(CoffeeType.Latte);
+        Coffee coffee = cafe.brew(Latte);
 
         // then
-        assertEquals("Wrong coffee type", CoffeeType.Latte, coffee.getType());
-        assertEquals("Wrong number of beans", 7, coffee.getBeans());
-        assertEquals("Wrong amount of milk", 227, coffee.getMilk());
+        assertEquals("Wrong coffee type", Latte, coffee.getType());
+
+        assertBeansEqual(coffee, Latte);
+        assertMilkEqual(coffee, Latte);
     }
 
     @Test
@@ -92,7 +95,7 @@ public class CafeTest {
         provideBeansToCafe();
 
         // when
-        cafe.brew(CoffeeType.Latte);
+        cafe.brew(Latte);
 
         // the above makes the test fail, but we actually want the test
         // to fail if we try and brew a Latte with not enough milk in stock.
@@ -119,6 +122,19 @@ public class CafeTest {
     private void provideBeansToCafe() {
 
          cafe.restockBeans(ESPRESSO_BEANS); // works for espresso and latte, but not filter
+
+    }
+
+    private void assertBeansEqual(Coffee coffee, CoffeeType coffeeType) {
+
+        assertThat(coffee, Matchers.hasProperty("beans",
+                Matchers.equalTo(coffeeType.getRequiredBeans())));
+    }
+
+    private void assertMilkEqual(Coffee coffee, CoffeeType coffeeType) {
+
+        assertThat(coffee, Matchers.hasProperty("milk",
+                Matchers.equalTo(coffeeType.getRequiredMilk())));
 
     }
 }
