@@ -36,7 +36,9 @@ public final class Cafe {
         beansInStock -= requiredBeans;
         milkInStock -= requiredMilk;
 
-        return new Coffee(coffeeType,requiredBeans, requiredMilk);
+        // return new Coffee(coffeeType,requiredBeans, requiredMilk);
+        // used to break a couple tests
+        return new Coffee(coffeeType, requiredBeans, requiredMilk);
     }
 
     private void requirePositive(int value) {
