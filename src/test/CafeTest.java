@@ -4,6 +4,7 @@ import main.Cafe;
 import main.Coffee;
 import main.CoffeeType;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import static main.CoffeeType.Espresso;
@@ -18,12 +19,23 @@ public class CafeTest {
     public static final int NO_MILK  = 0;
     public static final int NO_BEANS  = 0;
 
+    private Cafe cafe;
+
+    @Before
+    public void before() {
+
+        cafe = new Cafe();
+
+        // not every test needs beans, so we don't call
+        // provideCafeWithBeans() here
+    }
+
     // tests pass by default
     @Test
     public void canBrewEspresso() {
 
         // given -- set up preconditions for test
-        Cafe cafe = setupCafeWithBeans();
+        provideBeansToCafe();
 
         // when -- the behavior is executed
         Coffee coffee = cafe.brew(Espresso);
@@ -47,7 +59,7 @@ public class CafeTest {
     public void canBrewLatte() {
 
         // given
-        Cafe cafe = setupCafeWithBeans();
+        provideBeansToCafe();
         cafe.restockMilk(227);
 
         // when
@@ -63,7 +75,7 @@ public class CafeTest {
     public void brewingEspressoConsumesBeans() {
 
         // given -- set up preconditions for test
-        Cafe cafe = setupCafeWithBeans();
+        provideBeansToCafe();
 
         // when -- the behavior is executed
         Coffee coffee = cafe.brew(Espresso);
@@ -77,7 +89,7 @@ public class CafeTest {
     public void lattesRequireMilk() {
 
         // given
-        Cafe cafe = setupCafeWithBeans();
+        provideBeansToCafe();
 
         // when
         cafe.brew(CoffeeType.Latte);
@@ -92,9 +104,6 @@ public class CafeTest {
     @Test(expected = IllegalArgumentException.class)
     public void mustRestockMilk() {
 
-        // given
-        Cafe cafe = new Cafe();
-
         // when
         cafe.restockMilk(NO_MILK);
     }
@@ -103,16 +112,13 @@ public class CafeTest {
     @Test(expected = IllegalArgumentException.class)
     public void mustRestockBeans() {
 
-        Cafe cafe = new Cafe();
-
         cafe.restockBeans(NO_BEANS);
     }
 
     // setup code for the given of our tests
-    private Cafe setupCafeWithBeans() {
+    private void provideBeansToCafe() {
 
-        Cafe cafe = new Cafe();
-        cafe.restockBeans(ESPRESSO_BEANS); // works for espresso and latte, but not filter
-        return cafe;
+         cafe.restockBeans(ESPRESSO_BEANS); // works for espresso and latte, but not filter
+
     }
 }
