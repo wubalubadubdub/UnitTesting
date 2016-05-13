@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LeapYearTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/LeapYearTest.java">
+      <file leaf-file-name="WordWrapTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/WordWrapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+            <state relative-caret-position="175">
+              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,15 +34,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeapYear.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/LeapYear.java">
+      <file leaf-file-name="WordWrap.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/WordWrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-              <folding>
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,6 +77,8 @@
         <option value="$PROJECT_DIR$/src/test/CafeTest.java" />
         <option value="$PROJECT_DIR$/src/test/LeapYearTest.java" />
         <option value="$PROJECT_DIR$/src/test/LeapYear.java" />
+        <option value="$PROJECT_DIR$/src/test/WordWrapTest.java" />
+        <option value="$PROJECT_DIR$/src/test/WordWrap.java" />
       </list>
     </option>
   </component>
@@ -145,7 +144,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LeapYearTest">
+  <component name="RunManager" selected="JUnit.WordWrapTest">
     <configuration default="false" name="CafeTest.canBrewEspresso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -198,32 +197,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="HamcrestExampleTest.mapShouldContainValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="UnitTesting" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.HamcrestExampleTest" />
-      <option name="METHOD_NAME" value="mapShouldContainValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="HamcrestExampleTest.listOrderingIsIrrelevant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -262,6 +235,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.LeapYearTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="WordWrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="UnitTesting" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.WordWrapTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -513,17 +512,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CafeTest.canBrewEspresso" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CafeTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HamcrestExampleTest.mapShouldContainValue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HamcrestExampleTest.listOrderingIsIrrelevant" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LeapYearTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HamcrestExampleTest.listOrderingIsIrrelevant" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LeapYearTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.WordWrapTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LeapYearTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CafeTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CafeTest.canBrewEspresso" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HamcrestExampleTest.listOrderingIsIrrelevant" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HamcrestExampleTest.mapShouldContainValue" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.WordWrapTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LeapYearTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CafeTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CafeTest.canBrewEspresso" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HamcrestExampleTest.listOrderingIsIrrelevant" />
       </list>
     </recent_temporary>
   </component>
@@ -544,35 +543,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CafeTest - 2016.05.12 at 17h 22m 13s.xml">
-      <configuration name="CafeTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 34m 49s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 22h 57m 36s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 37m 54s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 22h 59m 56s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 42m 00s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 01m 27s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 42m 58s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 01m 57s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 48m 52s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 06m 48s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 49m 54s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 11m 13s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 52m 14s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 14m 55s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 54m 42s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 16m 36s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 58m 09s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2016.05.12 at 23h 47m 18s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2016.05.13 at 00h 59m 58s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -587,7 +586,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32392028" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32392028" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -734,8 +733,8 @@
         <state relative-caret-position="251">
           <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -745,8 +744,26 @@
         <state relative-caret-position="421">
           <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/WordWrapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/WordWrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
+          <folding />
         </state>
       </provider>
     </entry>
